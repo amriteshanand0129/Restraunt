@@ -1,0 +1,60 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <title>Feedback</title>
+  <style>
+    .total{
+      background-image: url("https://media.istockphoto.com/id/1277188775/photo/we-want-your-feedback-speech-bubble-concept.jpg?s=612x612&w=0&k=20&c=g_As78KiYFrF6YtR4wfj_OGlZHqkOrugH_cML7VKqbk=");
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 750px
+    }
+    #feed{
+      font-size: 48px;
+      color: orange;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    #some{
+      font-size: 36px;
+      color: purple;
+      left: 50px;
+    }
+    #submit{
+      padding: 5px;
+      margin-left: 610px;
+    }
+    #area{
+      margin-left: 200px;
+      margin-top: 100px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<div class="total">
+<body>
+  <br><br>
+  <h1 id="feed"><center>FeedBack..</center></h1>
+  <br><br>
+  <div id="some">
+  <p><u><b>Please rate our service.</b></u></p>
+      <div class="rate">
+        <input type="radio" id="star5" name="rate" value="5" />
+        <label for="star5" title="text"></label>
+        <input type="radio" id="star4" name="rate" value="4" />
+        <label for="star4" title="text"></label>
+        <input type="radio" id="star3" name="rate" value="3" />
+        <label for="star3" title="text"></label>
+        <input type="radio" id="star2" name="rate" value="2" />
+        <label for="star2" title="text"></label>
+        <input type="radio" id="star1" name="rate" value="1" />
+        <label for="star1" title="text"></label>
+      </div>
+    </div>
+  <br><br>
+  <textarea name="Message" rows="15" cols="50" id="area">Message...</textarea>
+  <br><br>
+  <button type="button" onclick="alert('Thanks for the feedback, have a nice day')" id="submit">Submit</button>
+</div>
+</body>
+</html>

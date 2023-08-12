@@ -1,0 +1,478 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    line-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.logo a{
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:goldenrod;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.main a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.5s all ease;
+}
+
+.main a:hover {
+    color: gold;
+}
+.menu-block a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.5s all ease;
+}
+.menu-block a:hover {
+    color: gold;
+}
+nav ul li{
+    display:flex;
+    flex-direction: row;
+    float: left;
+    list-style-type: none;
+    padding: 0px 10px;
+}
+
+.header {
+    background-image: url("https://www.refrigeratedfrozenfood.com/ext/resources/NEW_RD_Website/DefaultImages/default-pasta.jpg?1430942591"); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.content {
+    padding: 100px 200px 100px 300px;
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 50px;
+    font-size: 40px;
+}
+
+.menu {
+    align-self: center;
+    display: inline-block;
+    height: 300px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.para {
+    width: 100%;
+    background-image: url("https://news.italianfood.net/wp-content/uploads/sites/2/2019/09/Pasta-2.jpeg");
+    margin: 10px 100px 20px 40px;
+    background-repeat: no-repeat;
+}
+
+.quote {
+    display:inline-block;
+    background-color: rgba(0,0,0,0.4);
+    margin-top: 20px 0px 20px 20px;
+    padding: 10px;
+    color:ghostwhite;
+    line-height: 50px;
+    font-size: larger;
+}
+.choose {
+    display: block;
+    background: none;
+    margin-top: 100px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 2px;
+}
+.choose h2 {
+    color: black;
+}
+.choose p {
+    color: black;
+}
+.choose:hover {
+    color: gold;
+    transition: 0.5s;
+}
+
+.type1 {
+    grid-area: typ1;
+    background-image: url('https://blog-guru.net/wp-content/uploads/2015/11/Best-North-Indian-Food-Recipe.jpg'); 
+    background-size: cover;
+    height: 400px;
+}
+.type2 {
+    grid-area: typ2;
+    background-image: url('https://deih43ym53wif.cloudfront.net/masala-dosa-shutterstock_785766178_c75e543a17.jpeg');
+    background-size: cover;
+    
+}
+.type3 {
+    grid-area: typ3;
+    background-image: url('https://th.bing.com/th/id/R.30a0a46c90e538186eec5bfeff88f5db?rik=Z0JvDbxUdMc96w&riu=http%3a%2f%2fi.imgur.com%2f0PzvezB.jpg&ehk=8jreDaPKcTTBiKeHzpP7Z8dX8ztm9HAatZVlZD0ufJs%3d&risl=&pid=ImgRaw&r=0');
+    background-size: cover;
+}
+.type4 {
+    grid-area: typ4;
+    background-image: url('https://img.freepik.com/premium-photo/chicken-hakka-noodles-schezwan-szechwan-noodles-served-bowl-with-chopsticks-selective-focus_466689-74520.jpg?size=338&ext=jpg&ga=GA1.2.696560577.1669534166&semt=sph');
+    background-size: cover;
+    height: 400px;
+}
+.type5 {
+    grid-area: typ5;
+    background-image: url('https://img.freepik.com/free-photo/indian-sweet-food-gulab-jamun-served-round-ceramic-bowl_466689-71987.jpg?w=1060&t=st=1669708662~exp=1669709262~hmac=424e3d079f68bb684bf4f8d837d0680998fad151514aea83b7ef158ed0c2d5e5');
+    background-size: cover;
+}
+.type6 {
+    grid-area: typ6;
+    background-image: url('https://img.freepik.com/free-photo/close-up-homemade-tasty-gelato-scoops_23-2148425384.jpg?w=1060&t=st=1669724645~exp=1669725245~hmac=36d50b86a6b98d468de02b26bde2e81c619a0585262954317170df1006b4d9da');
+    background-size: cover;
+}
+
+.menu-block {
+    margin: 50px 90px 50px 90px;
+    display: grid;
+    grid-template-areas: 'typ1 typ2 typ3'
+                         'typ4 typ5 typ6';
+    gap: 80px;
+    height: 500px;
+    width: 90%;
+}
+.menu-block > div {
+    text-align: center;
+    font-size: 25px;
+    border-radius: 15px;
+}
+
+.booking {
+    background-image: url('https://img.freepik.com/free-photo/serving-tables-wedding-old-restaurant_8353-9579.jpg?w=1060&t=st=1670794671~exp=1670795271~hmac=a2049560986b0538841347004cdb9bf1689193254e0cb54705c2897a633e2ed4');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 580px;
+    margin: 420px 20px 20px 40px;
+    width: 80%;
+}
+.booking-in {
+    background-color: rgba(0,0,0,0.4);
+    height: 460px;
+    width: 40%;
+    padding: 60px;
+    color: white;
+}
+.booking-button {
+    display: inline-block;
+    background-color: white;
+    padding: 10px 20px 10px 20px;
+    border-color: transparent;
+    border-radius: 6px;
+}
+.booking-button:hover {
+    background-color: rgba(0,0,0,0.3);
+    transition: 0.8s;
+} 
+.booking-button a {
+    text-decoration: none;
+    color: black;
+}
+.booking-button:hover a {
+    color: white;
+    transition: 0.8s;
+}
+.north {
+    background-image: url('https://img.freepik.com/free-photo/flat-lay-indian-food-frame_23-2148747715.jpg?w=1060&t=st=1669534199~exp=1669534799~hmac=15dcea650acd57f0abce48ebefbff8fc2c65e0693e612f5a599c08f34795033f'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+.north-india {
+    display: block;
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 50px;
+    padding: 20px 0px 20px 20px;
+    margin-bottom: 200px;
+    font-size: 30px;
+    font-family: cursive;
+    color: white;
+}
+
+.north-menu {
+    display: block;
+    background-color: antiquewhite;
+    opacity: 90%;
+    height: 800px;
+    width: 40%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+}
+
+.north p {
+    font-style: italic;
+}
+.north-footer {
+    margin-top: 500px;
+}
+
+.south {
+    background-image: url('https://img.freepik.com/premium-photo/masala-dosa-is-south-indian-meal-served-with-sambhar-coconut-chutney-selective-focus_466689-22958.jpg?size=626&ext=jpg&ga=GA1.2.696560577.1669534166&semt=sph');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+
+.south-india {
+    display: block;
+    background-color: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 50px;
+    padding: 20px 0px 20px 20px;
+    margin-bottom: 400px;
+    font-size: 30px;
+    font-family: cursive;
+    color: white
+}
+
+.south-menu {
+    display: block;
+    background-color: antiquewhite;
+    height: 700px;
+    opacity: 90%;
+    width: 40%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+}
+.south p{
+    font-style: italic;
+}
+.south-footer {
+    margin-top: 600px;
+}
+.italian {
+    background-image: url('https://img.taste.com.au/uiRqD-6v/w720-h480-cfill-q80/taste/2016/11/pasta-e-fagioli-95155-1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+.italian-food {
+    display: block;
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 50px;
+    padding: 20px 0px 20px 20px;
+    margin-bottom: 400px;
+    font-size: 30px;
+    font-family: cursive;
+    color: white;
+}
+.italian-menu {
+    display: block;
+    background-color: antiquewhite;
+    opacity: 90%;
+    height: 700px;
+    width: 40%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+}
+.italian p {
+    font-style: italic;
+}
+.italian-footer {
+    margin-top: 600px;
+}
+.chinese {
+    background-image: url('https://img.freepik.com/free-photo/schezwan-noodles-szechwan-vegetable-hakka-noodles-chow-mein-is-popular-indo-chinese-recipes-served-bowl-plate-with-wooden-chopsticks_466689-74473.jpg?size=626&ext=jpg&ga=GA1.2.696560577.1669534166&semt=sph');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 800px;
+}
+.chinese-food {
+    display: block;
+    background-color: rgba(0,0,0,0.3);
+    width: 100%;
+    height: 50px;
+    padding: 20px 0px 20px 20px;
+    margin-bottom: 400px;
+    font-size: 30px;
+    font-family: cursive;
+    color: white;
+}
+.chinese-menu {
+    display: block;
+    background-color: antiquewhite;
+    opacity: 90%;
+    height: 700px;
+    width: 40%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+}
+.chinese p {
+    font-style: italic;
+}
+.chinese-footer {
+    margin-top: 600px;
+}
+.dessert-grid1 {
+    grid-area: dg1;
+    background-image: url('https://t3.ftcdn.net/jpg/02/37/92/76/240_F_237927656_FW6faQ2nI84oDfF940Rt0bTLBS8Ibw1h.jpg');
+    background-size: cover;
+    height: 400px;
+    border-radius: 10px;
+}
+.dessert-grid2 {
+    grid-area: dg2;
+    background-image: url('https://img.freepik.com/free-photo/chocolate-ice-cream-dessert_144627-8363.jpg?size=626&ext=jpg&ga=GA1.2.696560577.1669534166&semt=sph');
+    border-radius: 10px;
+
+}
+.dessert-grid3 {
+    grid-area: dg3;
+    background-image: url('https://img.freepik.com/free-photo/vanilla-ice-cream-with-chocolate-brownie-cake-with-strawberry_1203-9192.jpg?size=626&ext=jpg&ga=GA1.2.696560577.1669534166&semt=sph');
+    border-radius: 10px;
+}
+.dessert-grid {
+    display: grid;
+    grid-template-areas: 
+                    'dg1 dg2 dg3';
+    gap: 10px;               
+    height: 400px;
+    margin: 20px;
+}
+.dessert-grid > div {
+    border: 2px solid black;
+}
+.dessert {
+    display: block;
+    text-align: center;
+    line-height: 5px;
+}
+.dessert-dish {
+    margin: auto;
+    width: 40%;
+    background-color: bisque;
+    opacity: 90%;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.dessert-dish ul li {
+    list-style-type: none;
+}
+.dessert-dish p {
+    font-style: italic;
+}
+.dessert-footer {
+    margin-top: 100px;
+}
+.sweet {
+    background-image: url('https://img.freepik.com/free-photo/kaju-badam-katli-is-popular-indian-sweet-barfee-barfi-burfi-made-using-milk-khoya-cachew-almond-sugar_466689-72187.jpg?w=1060&t=st=1670852039~exp=1670852639~hmac=9aa8f89f6cd50ad6d76266a243a1c5948e7a6584789c3fd3208ba745adc4cd4b');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+.sweet-dish {
+    display: block;
+    background-color: rgba(0,0,0,0.4);
+    width: 100%;
+    height: 50px;
+    padding: 20px 0px 20px 20px;
+    margin-bottom: 200px;
+    font-size: 30px;
+    font-family: cursive;
+    color: white;
+}
+.sweet-menu {
+    display: block;
+    background-color: antiquewhite;
+    opacity: 90%;
+    height: 900px;
+    width: 40%;
+    margin: auto;
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+}
+.sweet-footer {
+    margin-top: 700px;
+}
+.feedback-block {
+    display: block;
+    width: 100%;
+    height: 500px;
+}
+.feedback-bookmark {
+    display: inline-block;
+    background-image: url('https://img.freepik.com/premium-vector/food-critic-ordering-wine-restaurant-expert-foodie-blogger-trying-food-makes-review-satisfied-foodie-character-sitting-table-enjoying-delicious-meals-cartoon-people-vector-illustration_1016-11744.jpg?w=900');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 80%;
+}
+.feedback-button {
+    display: block;
+    margin: 90px 20px 20px 550px;
+    border-radius: 20px;
+    font-family: cursive;
+    font-style: italic;
+}
+.feedback-button-enter {
+    display: block;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: rgba(0,0,0,0.4);
+}
+.feedback-button a {
+    text-decoration: none;
+}
+.feedback-button-enter:hover {
+    background-color: white;
+    color: black;
+    border-color: black;
+    transition: 0.8s;
+}
+
+footer {
+    padding: 10px;
+    height: 500px;
+    background-color: rgba(0,0,0,0.9);
+    color: white;
+    align-items: center;
+}
+
+.contact-footer {
+    display: inline-block;
+    margin-left: 660px;
+    padding: 20px 30px 30px 30px;
+    background-color: rgba(255,255,255,0.1);
+    height: 170px;
+    border-radius: 20px;
+}
+.contact-footer a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}

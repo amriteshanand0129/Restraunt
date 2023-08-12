@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>book seat</title>
+    </head>
+    <style>
+        .bgc{
+            background-size: cover;
+            background-repeat: no-repeat;
+            opacity: 70;
+        }
+            .happy {
+            display: grid;
+            grid-template-areas: 'table1 table2'
+                                 'table1a table2a'
+                                 'table3 table4'
+                                 'table3a table4a';
+            gap: 20px;
+            margin-left: 20px;
+            margin-right:20px;
+        }
+        .table-booking {
+            background-image: url("https://img.freepik.com/free-photo/table-set-dinning-table_1339-3459.jpg?w=1060&t=st=1670785927~exp=1670786527~hmac=d90aa6348aeaa145e88d6ebce17167fe98d12eb0285b67b36bc05b1254dd31ee");
+            background-size: cover;
+            border-radius: 20px;
+            height: 700px;
+            margin-bottom: 40px;
+            padding: 100px;
+        }
+        .table-booking-in {
+            display: inline-block;
+            margin-left: 200px;
+            width: 60%;
+            background-color: rgba(0,0,0,0.5);
+            border-radius: 40px;
+            padding: 50px;
+            color: rgba(255,255,255, 0.8);
+            font-size: 30px;
+            text-align: center;
+        }
+        .family-table {
+            grid-area: table1;
+            display: inline-block;
+            border-radius: 15px;
+            background-image: url("https://img.freepik.com/free-photo/happy-family-havinf-dinner-together_23-2149117549.jpg?size=626&ext=jpg&ga=GA1.2.1531843277.1670679954");
+            background-size: cover;
+            height: 400px;
+        }
+        .partner-table {
+            grid-area: table2;
+            display: inline-block;
+            border-radius: 15px;
+            background-image: url("https://media.istockphoto.com/id/506823516/photo/couple-enjoying-a-romantic-dinner-by-candlelight.jpg?s=612x612&w=0&k=20&c=oqF5We7gsVns2IJTphUEEuub_SjyoARs2zwxcng6zVU=");
+            background-size: cover;
+        }
+        .group-table {
+            grid-area: table3;
+            display: inline-block;
+            border-radius: 15px;
+            background-image: url("https://media.istockphoto.com/id/868935172/photo/heres-to-tonight.jpg?s=612x612&w=0&k=20&c=v1ceJ9aZwI43rPaQeceEx5L6ODyWFVwqxqpadC2ljG0=");
+            background-size: cover;
+            height: 400px;
+
+        }
+        .official-table {
+            grid-area: table4;
+            display: inline-block;
+            border-radius: 15px;
+            background-image: url("https://media.istockphoto.com/id/871544696/photo/friends-enjoying-breakfast-together.jpg?s=612x612&w=0&k=20&c=G802Fz_IPUTYGSZZB7zZr84f_ORyUk0oWuhpG-ivX6E=");
+            background-size: cover;
+        }
+        .family-table-detail {
+            grid-area: table1a;
+            text-align: center;
+        }
+        .partner-table-detail {
+            grid-area: table2a;
+            text-align: center;
+        }
+        .group-table-detail {
+            grid-area: table3a;
+            text-align:center;
+        }
+        .official-table-detail {
+            grid-area: table4a;
+            text-align: center;
+        }
+        #table-button {
+            display: inline-block;
+            padding: 10px;
+            background-color: rgba(0,0,0,0.3);
+            border-radius: 5px;
+            border-color: transparent;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        #table-button:hover {
+            border-color:black;
+            background-color: white;
+            transition: 0.8s;
+        }
+        #table-button:hover a {
+            color: black;
+            transition: 0.8s;
+        }
+        
+    </style>
+    <body>
+        <div class="bgc">
+            <div class="table-booking">
+                <div class="table-booking-in">
+                <h2>Planning to<h2>
+                <h2> DINE OUT !</h2>
+                <h2>Book your table now !!</h2>
+                </div>
+            </div>
+            <div class="happy">
+                <div class="family-table">
+                </div>
+                <div class="partner-table">
+                </div>
+                <div class="group-table">
+                </div>
+                <div class="official-table">
+                </div>
+                <div class="family-table-detail">
+                    <h1>Family Table</h1>
+                    <h3>6 Chairs</h3>
+                    <h3>Price: Rs. 4000</h3>
+                    <button id="table-button"><a href="login.html">BOOK NOW</a></button>
+                </div>
+                <div class="partner-table-detail">
+                    <h1>Partner Table</h1>
+                    <h3>2 Chairs</h3>
+                    <h3>Price: Rs. 3500</h3>
+                    <button id="table-button"><a href="login.html">BOOK NOW</a></button>
+                </div>
+                <div class="group-table-detail">
+                    <h1>Whole Restaurant</h1>
+                    <h3>Price: Rs. 15000</h3>
+                    <button id="table-button"><a href="login.html">BOOK NOW</a></button>
+                </div>
+                <div class="official-table-detail">
+                    <h1>Official Table</h1>
+                    <h3>12 Chairs</h3>
+                    <h3>Price: Rs. 8000</h3>
+                    <button id="table-button"><a href="login.html">BOOK NOW</a></button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
